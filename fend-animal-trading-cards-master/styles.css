@@ -1,0 +1,24 @@
+.card {
+    height: 860px;
+    width: 300px;
+    border: 1px solid #ddd;
+    box-shadow: 5px 5px 2px 1px rgba(153,153,153,0.2);
+    padding: 10px 10px 10px 10px;
+}
+.border {
+    border: 1px solid #ddd;
+}
+.text-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.top-fact {
+    font-style:italic;
+}
+.fact-list {
+    list-style: none;
+}
+
+.label {
+    font-weight: bold;
+}
