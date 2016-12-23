@@ -1,6 +1,7 @@
 /* Global */
 * {
 	/* you'll want to use this for something... boxy. */
+    box-sizing: border-box;
 }
 
 body {
@@ -23,9 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Big sections of content */
 .section-content {
-	/*width: 100%;*/
-    width:800px;
-    margin: 0 auto;
+	width: 100%;
 	overflow: hidden;
     padding-left: 1.5em;
 }
@@ -35,7 +34,8 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 38px;
 	border-bottom: 1px solid #000;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    padding: 0px 0px 16px 16px;
+    margin-top: 20px;
+    padding-bottom: 16px;
 }
 
 /* Font Awesome - http://fontawesome.io/ */
@@ -52,6 +52,8 @@ h1, h2, h3, h4, h5, h6 {
 .recipe {
 	padding: 0.75rem;
 	line-height: 25px;
+    width: 800px;
+    margin: 0 auto;
 }
 
 .recipe-summary {
@@ -67,7 +69,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .recipe-author {
 	margin-top: 1.7em;
-    font-style: italic;
 }
 
 .recipe-notes {

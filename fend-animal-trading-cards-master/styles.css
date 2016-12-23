@@ -3,14 +3,13 @@
     width: 300px;
     box-shadow: 5px 5px 2px 1px rgba(183,183,183,0.2);
     padding: 10px;
-    background-color: rgb(200, 245, 245);
+    background-color: rgb(200, 235, 255);
 }
 .card-title {
     text-align: center;
 }
 .card-picture {
     margin-top: 10px;
-    border: 1px solid #ddd;
     height: 200px;
     width: 300px;
 }
@@ -18,10 +17,11 @@
     margin-top: 10px;
 }
 .text-style {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: justify;
 }
 .fact-top {
     font-style:italic;
