@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Portfolio Project</title>
+     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="./bootstrap/css/style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+   </head>
+  <body>
+    <div class="container">
+        <!-- header -->
+        <div class="row">
+          <div class="col-md-6">
+              <img class="title-logo img-responsive" alt="Logo" src="./images/100x100">
+          </div>
+          <div class="col-md-6 text-right text-uppercase">
+            <h1 class="title-super text-thin">Jane Doette</h1>
+            <h3>Front-end Ninja</h3>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+        <!-- Top image  -->
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-responsive" alt="Top Image" src="http://placekitten.com/g/1140/350">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-muted">Featured Work</h2>
+            </div>
+        </div>
+        <!-- Featured work Row -->
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img class="img-responsive" alt="Project Snapshot" data-toggle="modal" data-target="#appify" src="http://placekitten.com/g/555/300">
+            <h3 class="text-uppercase">Appify</h3>
+            <p><a href="https://github.com/udacity/appify">https://github.com/udacity/appify</a></p>
+          </div>
+
+          <div class="col-md-4">
+            <img class="img-responsive" alt="Project Snapshot" src="http://placekitten.com/g/555/300">
+            <h3 class="text-uppercase">Sunflower</h3>
+            <p><a href="https://github.com/udacity/sunflower">https://github.com/sunflower</a></p>
+          </div>
+
+          <div class="col-md-4">
+            <img class="img-responsive" alt="Project Snapshot" src="http://placekitten.com/g/555/300">
+            <h3 class="text-uppercase">Bokeh</h3>
+            <p><a href="https://github.com/udacitybokeh">https://github.com/bokeh</a></p>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="appify" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-uppercase" id="myModalLabel">Appify Page</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placekitten.com/g/555/300">
+                    Appify is blah blah blah...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
