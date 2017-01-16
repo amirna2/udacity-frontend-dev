@@ -6,72 +6,95 @@
      <title>Portfolio Project</title>
      <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
      <link rel="stylesheet" href="./bootstrap/css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
    </head>
+
   <body>
     <div class="container">
         <!-- header -->
-        <div class="row">
+        <header class="row">
           <div class="col-md-6">
               <img class="title-logo img-responsive" alt="Logo" src="./images/100x100">
           </div>
           <div class="col-md-6 text-right text-uppercase">
-            <h1 class="title-super text-thin">Jane Doette</h1>
-            <h3>Front-end Ninja</h3>
+            <h1 class="title-super text-thin">Amir Nathoo</h1>
+            <h3>Front-End Ninja</h3>
           </div>
-        </div>
+        </header>
 
         <div class="row">
             <div class="col-md-12">
-                <hr>
+                <hr class="thick-muted">
             </div>
         </div>
+
         <!-- Top image  -->
-        <div class="row">
+        <section class="row">
             <div class="col-md-12">
-                <img class="img-responsive" alt="Top Image" src="http://placekitten.com/g/1140/350">
+                <img class="img-responsive" alt="Top Image" src="http://placekitten.com/1140/350">
             </div>
-        </div>
+        </section>
 
         <div class="row">
             <div class="col-md-12">
                 <h2 class="text-muted">Featured Work</h2>
             </div>
         </div>
-        <!-- Featured work Row -->
-        <div class="row text-center">
+
+        <!-- Featured work -->
+        <section class="row text-center">
           <div class="col-md-4">
-            <img class="img-responsive" alt="Project Snapshot" data-toggle="modal" data-target="#appify" src="http://placekitten.com/g/555/300">
+            <img class="img-responsive img-thumbnail" alt="Project Snapshot" data-toggle="modal" data-target="#project1" src="http://placekitten.com/555/300">
             <h3 class="text-uppercase">Appify</h3>
             <p><a href="https://github.com/udacity/appify">https://github.com/udacity/appify</a></p>
           </div>
 
           <div class="col-md-4">
-            <img class="img-responsive" alt="Project Snapshot" src="http://placekitten.com/g/555/300">
+            <img class="img-responsive img-thumbnail" alt="Project Snapshot" data-toggle="modal" data-target="#project2" src="http://placekitten.com/g/555/300">
             <h3 class="text-uppercase">Sunflower</h3>
             <p><a href="https://github.com/udacity/sunflower">https://github.com/sunflower</a></p>
           </div>
 
           <div class="col-md-4">
-            <img class="img-responsive" alt="Project Snapshot" src="http://placekitten.com/g/555/300">
+            <img class="img-responsive img-thumbnail" alt="Project Snapshot" data-toggle="modal" data-target="#project3" src="http://placekitten.com/555/300">
             <h3 class="text-uppercase">Bokeh</h3>
             <p><a href="https://github.com/udacitybokeh">https://github.com/bokeh</a></p>
           </div>
+      </section>
+
+      <!-- footer -->
+      <div class="row">
+          <div class="col-md-12">
+              <hr class="thin-muted">
+          </div>
+      </div>
+
+      <footer class="row footer text-muted">
+        <div class="col-md-2">
+            <ul class="social-icon animate pull-left">
+                  <li><a href="#" title="linkedin"><i class="fa fa-2x fa-linkedin"></i></a></li>
+                  <li><a href="#" title="github"><i class="fa fa-2x fa-github"></i></a></li>
+            </ul>
         </div>
+        <div class="col-md-10">
+          <h6 class="text-right">&copy; Amir Nathoo - 01/2017</h6>
+        </div>
+      </footer>
+
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="appify" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Modal for Project 1 -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title text-uppercase" id="myModalLabel">Appify Page</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="http://placekitten.com/g/555/300">
+                    <img class="img-responsive" src="http://placekitten.com/555/300">
                     Appify is blah blah blah...
                 </div>
                 <div class="modal-footer">
@@ -80,5 +103,41 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal For Project 2 -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-uppercase" id="myModalLabel">Sunflower Page</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placekitten.com/g/555/300">
+                    Sunflower is blah blah blah...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal For Project 3 -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-uppercase" id="myModalLabel">Bokeh Page</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placekitten.com/555/300">
+                    Bokeh is blah blah blah...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
