@@ -72,8 +72,15 @@ hr.thin-muted {
 }
 
 .social-icon a:hover {
-  color: #00A2FF; 
+  color: #A2A2A2;
 }
+.social-icon-linkedin a:hover {
+  color: #00A2FF;
+}
+.social-icon-github a:hover {
+  color: #0A0A0A;
+}
+
 
 h6 {
     text-align: center;
