@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
    <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <title>Portfolio Project</title>
-     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-     <link rel="stylesheet" href="./bootstrap/css/style.css">
+     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -17,7 +17,7 @@
         <!-- header -->
         <header class="row">
           <div class="col-md-6">
-              <img class="title-logo img-responsive" alt="Logo" src="./images/100x100">
+              <img class="title-logo img-responsive" alt="Logo" src="images/logo.jpeg">
           </div>
           <div class="col-md-6 text-right text-uppercase">
             <h1 class="title-super text-thin">Amir Nathoo</h1>
@@ -32,11 +32,11 @@
         </div>
 
         <!-- Top image  -->
-        <section class="row">
+        <div class="row">
             <div class="col-md-12">
-                <img class="img-responsive" alt="Top Image" src="http://placekitten.com/1140/350">
+                <img class="img-responsive" alt="Crater Lake" src="images/crater-lake.png">
             </div>
-        </section>
+        </div>
 
         <div class="row">
             <div class="col-md-12">
@@ -45,7 +45,7 @@
         </div>
 
         <!-- Featured work -->
-        <section class="row text-center">
+        <div class="row text-center">
           <div class="col-md-4">
             <img class="img-responsive img-thumbnail" alt="Project Snapshot" data-toggle="modal" data-target="#project1" src="http://placekitten.com/555/300">
             <h3 class="text-uppercase">Appify</h3>
@@ -63,7 +63,7 @@
             <h3 class="text-uppercase">Bokeh</h3>
             <p><a href="https://github.com/udacitybokeh">https://github.com/bokeh</a></p>
           </div>
-      </section>
+      </div>
 
       <!-- footer -->
       <div class="row">
@@ -73,28 +73,28 @@
       </div>
 
       <footer class="row footer text-muted">
-        <div class="col-md-2">
+        <div class="col-md-2 footer-left">
             <ul class="social-icon animate pull-left">
-                  <li><a href="#" title="linkedin"><i class="fa fa-2x fa-linkedin"></i></a></li>
-                  <li><a href="#" title="github"><i class="fa fa-2x fa-github"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/anathoo" title="linkedin"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+                  <li><a href="https://github.com/amirna2" title="github"><i class="fa fa-2x fa-github-square"></i></a></li>
+                  <li><a href="mailto:amir.nth@gmail.com" title="email"><i class="fa fa-2x fa-envelope-square"></i></a></li>
             </ul>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10 footer-right">
           <h6 class="text-right">&copy; Amir Nathoo - 01/2017</h6>
         </div>
       </footer>
-
     </div>
 
     <!-- Modal for Project 1 -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title text-uppercase" id="myModalLabel">Appify Page</h4>
+                    <h4 class="modal-title text-uppercase" id="myModalLabel1">Appify Page</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="http://placekitten.com/555/300">
+                    <img class="img-responsive" alt="snapshot 1" src="http://placekitten.com/555/300">
                     Appify is blah blah blah...
                 </div>
                 <div class="modal-footer">
@@ -105,14 +105,14 @@
     </div>
 
     <!-- Modal For Project 2 -->
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title text-uppercase" id="myModalLabel">Sunflower Page</h4>
+                    <h4 class="modal-title text-uppercase" id="myModalLabel2">Sunflower Page</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="http://placekitten.com/g/555/300">
+                    <img class="img-responsive" alt="snapshot 2" src="http://placekitten.com/g/555/300">
                     Sunflower is blah blah blah...
                 </div>
                 <div class="modal-footer">
@@ -121,15 +121,16 @@
             </div>
         </div>
     </div>
+
     <!-- Modal For Project 3 -->
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title text-uppercase" id="myModalLabel">Bokeh Page</h4>
+                    <h4 class="modal-title text-uppercase" id="myModalLabel3">Bokeh Page</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="http://placekitten.com/555/300">
+                    <img class="img-responsive" alt="snapshot 3" src="http://placekitten.com/555/300">
                     Bokeh is blah blah blah...
                 </div>
                 <div class="modal-footer">
