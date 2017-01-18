@@ -68,19 +68,22 @@ hr.thin-muted {
 }
 
 .social-icon a {
-  color: #b8b8b8;
+  color: #B8B8B8;
 }
 
-.social-icon a:hover {
-  color: #A2A2A2;
-}
-.social-icon-linkedin a:hover {
-  color: #00A2FF;
-}
-.social-icon-github a:hover {
-  color: #0A0A0A;
-}
+@media (hover:hover), (pointer:fine) {
+	.social-icon a:hover {
+	  color: #A2A2A2;
+	}
 
+	.social-icon-linkedin a:hover {
+	  color: #00A2FF;
+	}
+
+	.social-icon-github a:hover {
+	  color: #000;
+	}
+}
 
 h6 {
     text-align: center;
