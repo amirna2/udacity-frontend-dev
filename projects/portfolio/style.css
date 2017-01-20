@@ -11,16 +11,15 @@ body {
 }
 
 .footer-left {
-	margin-top:2px;
+	margin-top: 2px;
     padding-right: 0;
 	padding-left: 5px;
 }
 .footer-right {
-    margin-top:2px;
+    margin-top: 2px;
     padding-right: 5px;
 	padding-left: 0;
 }
-
 
 hr.thick-muted {
 	border-top: 2px solid #B8B8B8;
@@ -34,6 +33,7 @@ hr.thin-muted {
 .text-muted {
     color: #B8B8B8;
 }
+
 .text-thin {
     font-weight: 100;
 }
@@ -42,6 +42,7 @@ hr.thin-muted {
     color: #00A2FF;
     font-size: 50px;
 }
+
 .title-logo {
     margin-top: 20px;
 }
@@ -71,6 +72,16 @@ hr.thin-muted {
   color: #B8B8B8;
 }
 
+.text-position {
+    text-align: inherit;
+}
+
+@media screen and (max-width: 991px) {
+    .text-position {
+            text-align: center;
+    }
+}
+
 @media (hover:hover), (pointer:fine) {
 	.social-icon a:hover {
 	  color: #A2A2A2;
@@ -83,8 +94,4 @@ hr.thin-muted {
 	.social-icon-github a:hover {
 	  color: #000;
 	}
-}
-
-h6 {
-    text-align: center;
 }
